@@ -17,7 +17,7 @@ spec:
           image: us.gcr.io/xxxx/nextstreamserver
           env: 
             - name: NEXTAUTH_URL
-              value: https://server332386.nazwa.pl
+              value: http://eventonline.prefx.eu
 ---
 apiVersion: v1
 kind: Service
