@@ -6,10 +6,10 @@ Need to change code where TODO says its for cloud environment, also needs to cha
 ## Mails sending functionality is disable because of portfolio public access allows abuse of email
 
 ## Access to admin restricted area
-[Admin area](http://eventonline.prefx.eu//protected/EditMovies)
+[Admin area](https://eventonline.prefx.eu//protected/EditMovies)
 We have to login by clicing on "Sign in" button using auth info:
 - Użytkownik: admin
 - Hasło: portfolio
 
 ## Access to publicly allowed user area
-[User area](http://eventonline.prefx.eu/app/pages/token/7220a49f-b3ea-4215-83b8-4745c8032dd7)
+[User area](https://eventonline.prefx.eu/app/pages/token/7220a49f-b3ea-4215-83b8-4745c8032dd7)

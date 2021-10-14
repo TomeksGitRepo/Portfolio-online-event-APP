@@ -1,1 +1,1 @@
-export var siteOrigin: string = "http://eventonline.prefx.eu";
+export var siteOrigin: string = "https://eventonline.prefx.eu";

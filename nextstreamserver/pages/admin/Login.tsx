@@ -25,7 +25,7 @@ const Home = () => {
               onClick={() =>
                 signIn("credentials", {
                   callbackUrl:
-                    "http://eventonline.prefx.eu/protected/EditMovies",
+                    "https://eventonline.prefx.eu/protected/EditMovies",
                 })
               }
             >
