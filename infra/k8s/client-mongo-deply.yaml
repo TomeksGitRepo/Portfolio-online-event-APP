@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-mongo-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-mongo
+  template:
+    metadata:
+      labels:
+        app: client-mongo
+    spec:
+      containers:
+        - name: client-mongo
+          image: mongo
+          volumeMounts:
+            - mountPath: /data/db
+              name: client-mongo-storage
+      volumes:
+        - name: client-mongo-storage
+          persistentVolumeClaim:
+            claimName: client-db-pvc
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: task-pv-volume
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    namespace: default
+    name: client-db-pvc
+  gcePersistentDisk:
+    pdName: xxxx
+    fsType: ext4
+  # hostPath:
+  #   path: "/home/tom/mongodbdata"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: client-db-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-mongo-srv
+spec:
+  selector:
+    app: client-mongo
+  ports:
+    - name: db
+      protocol: TCP
+      port: 27017
+      targetPort: 27017

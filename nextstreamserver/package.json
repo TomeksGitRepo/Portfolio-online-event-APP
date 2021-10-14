@@ -1,0 +1,45 @@
+{
+  "name": "event_online_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "serve": "npm run build && npm run start",
+    "build": "next build",
+    "start": "next start -p 3003",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@types/mongoose": "^5.11.97",
+    "@types/validator": "^13.6.3",
+    "axios": "^0.21.1",
+    "cookie-cutter": "^0.2.0",
+    "cookies": "^0.8.0",
+    "email-validator": "^2.0.4",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.14",
+    "next": "11.1.0",
+    "next-auth": "^3.27.0",
+    "next-transpile-modules": "^8.0.0",
+    "nodemailer": "^6.6.2",
+    "react": "17.0.2",
+    "react-animated-css": "^1.2.1",
+    "react-awesome-slider": "^4.1.0",
+    "react-countdown-circle-timer": "^2.5.3",
+    "react-dom": "17.0.2",
+    "react-responsive": "^9.0.0-beta.3",
+    "react-spinners": "^0.11.0",
+    "recoil": "^0.3.1",
+    "sass": "^1.37.2",
+    "semantic-ui-react": "^2.0.3",
+    "uuid": "^8.3.2",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.2",
+    "@types/react": "^17.0.11",
+    "eslint": "7.28.0",
+    "eslint-config-next": "11.0.0"
+  }
+}

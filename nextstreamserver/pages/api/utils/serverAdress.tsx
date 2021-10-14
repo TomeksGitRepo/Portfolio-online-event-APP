@@ -1,0 +1,1 @@
+export var siteOrigin: string = "http://server332386.nazwa.pl";

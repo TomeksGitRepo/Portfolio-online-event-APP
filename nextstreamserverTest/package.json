@@ -1,0 +1,20 @@
+{
+  "name": "nextstreamservertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tsc ./pages/app/pages/token/test/testingUserConnection.test.ts && node ./pages/app/pages/token/test/testingUserConnection.test.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node-cron": "^2.0.4",
+    "axios": "^0.21.1",
+    "node-cron": "^3.0.0"
+  }
+}
