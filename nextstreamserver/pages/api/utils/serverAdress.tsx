@@ -1,1 +1,1 @@
-export var siteOrigin: string = "http://server332386.nazwa.pl";
+export var siteOrigin: string = "http://server332386.nazwa.pl:3003";
