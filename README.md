@@ -12,4 +12,4 @@ We have to login by clicing on "Sign in" button using auth info:
 - Hasło: portfolio
 
 ## Access to publicly allowed user area
-[User area](https://eventonline.prefx.eu/app/pages/token/7220a49f-b3ea-4215-83b8-4745c8032dd7)
+[User area](https://eventonline.prefx.eu/app/pages/token/a7cd22c5-e6de-4e7a-9236-d4e937b7bde9)
