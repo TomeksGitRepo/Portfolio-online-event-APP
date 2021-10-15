@@ -13,3 +13,7 @@ We have to login by clicing on "Sign in" button using auth info:
 
 ## Access to publicly allowed user area
 [User area](https://eventonline.prefx.eu/app/pages/token/a7cd22c5-e6de-4e7a-9236-d4e937b7bde9)
+
+## Some of functionality:
+- app block multiple connections using one token, only one token in use allowed
+- admin can change movies from online to newest and movies without special group
